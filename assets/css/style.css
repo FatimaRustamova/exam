@@ -1,0 +1,1126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 32px;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 32px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  padding: 20px 0;
+}
+header .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .head .left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .head .left p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+header .head .account {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header .head .account a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 14px;
+}
+
+nav {
+  width: 100%;
+  padding: 30px 0;
+  background-color: white;
+  z-index: 1000;
+  transition: all 0.5s ease;
+  position: relative;
+}
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+nav .navbar ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+nav .navbar ul li a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: black;
+}
+nav .navbar ul li a:hover {
+  color: rgb(255, 0, 60);
+}
+nav .navbar ul .hot {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 0, 60);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  top: -20px;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .navbar .div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav .navbar .div input {
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid rgb(204, 204, 204);
+  position: relative;
+  outline: none;
+}
+nav .navbar .div .i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgb(204, 204, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+nav .navbar .div .i i {
+  font-size: 18px;
+}
+nav .navbar .div .i .position {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(0, 177, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+nav .navbar .div .i .position p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: white;
+}
+nav .navbar .div button {
+  width: 100px;
+  height: 45px;
+  background-color: rgb(37, 119, 253);
+  border: 1px solid rgb(37, 119, 253);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+nav .navbar .div button:hover {
+  background-color: rgb(0, 177, 255);
+  border: 1px solid rgb(0, 177, 255);
+  cursor: pointer;
+}
+nav .navbar #list {
+  display: none;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100%;
+  position: absolute;
+  background-color: dimgrey;
+}
+.modal ul {
+  padding: 20px 0;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  flex-direction: column;
+}
+.modal ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+.modal ul li a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: white;
+}
+.modal ul li a:hover {
+  color: rgb(255, 0, 60);
+}
+
+.none {
+  display: none;
+}
+
+.sect1 {
+  width: 100%;
+  padding-top: 50px;
+  background-image: url("../images/h1_hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sect1 .winter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sect1 .winter .image {
+  width: 55%;
+}
+.sect1 .winter .image img {
+  width: 100%;
+}
+.sect1 .winter .text {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sect1 .winter .text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  font-style: italic;
+  color: rgb(37, 119, 253);
+}
+.sect1 .winter .text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+}
+.sect1 .winter .text span {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-style: italic;
+  color: dimgrey;
+}
+.sect1 .winter .text button {
+  width: 170px;
+  height: 50px;
+  background-color: rgb(37, 119, 253);
+  border: 1px solid rgb(37, 119, 253);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+.sect1 .winter .text button:hover {
+  background-color: rgb(0, 177, 255);
+  border: 1px solid rgb(0, 177, 255);
+  cursor: pointer;
+}
+
+.sect2 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect2 .shop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sect2 .shop h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  text-align: center;
+}
+.sect2 .water {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sect2 .water .cloth {
+  width: 32%;
+  margin-top: 50px;
+}
+.sect2 .water .cloth .new {
+  width: 100%;
+  position: relative;
+}
+.sect2 .water .cloth .new img {
+  width: 100%;
+}
+.sect2 .water .cloth .new .right {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sect2 .water .cloth .new .right h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+}
+.sect2 .water .cloth .new .right .best {
+  width: 140px;
+  height: 40px;
+  background-color: rgb(255, 206, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+}
+.sect2 .water .cloth .new .right p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  color: rgb(37, 119, 253);
+}
+.sect2 .water .cloth .new .right span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+
+.active {
+  color: rgb(255, 0, 60);
+}
+
+.sect3 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect3 .late {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sect3 .late h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+}
+.sect3 .late ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+.sect3 .late ul li {
+  list-style-type: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+}
+.sect3 .late ul li a {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: dimgrey;
+}
+.sect3 .late ul li a:hover {
+  color: rgb(255, 0, 60);
+}
+.sect3 hr {
+  margin-top: 30px;
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgb(226, 226, 226);
+}
+.sect3 .input {
+  padding: 50px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.sect3 .input #search {
+  width: 350px;
+  height: 45px;
+  outline: none;
+  border: 2px solid teal;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.sect3 .input #sort {
+  width: 150px;
+  height: 45px;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: teal;
+  border: 1px solid teal;
+  color: white;
+  padding-left: 15px;
+}
+.sect3 .product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.sect3 .product .clothes {
+  width: 32%;
+  margin-top: 40px;
+  position: relative;
+}
+.sect3 .product .clothes .heart {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.sect3 .product .clothes .heart i {
+  font-size: 25px;
+  color: maroon;
+  cursor: pointer;
+}
+.sect3 .product .clothes .picture {
+  width: 100%;
+}
+.sect3 .product .clothes .picture img {
+  width: 100%;
+}
+.sect3 .product .clothes .green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.sect3 .product .clothes .green .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sect3 .product .clothes .green .icons i {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+}
+.sect3 .product .clothes .green .icons #yellow {
+  color: rgb(255, 206, 37);
+}
+.sect3 .product .clothes .green p {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.sect3 .product .clothes .green p:hover {
+  color: rgb(255, 0, 60);
+  cursor: pointer;
+}
+.sect3 .product .clothes .green .dollar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.sect3 .product .clothes .green .dollar #span1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.sect3 .product .clothes .green .dollar #span2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 0, 60);
+}
+.sect3 .product .clothes .green button {
+  width: 150px;
+  height: 45px;
+  background-color: teal;
+  border: 1px solid teal;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+}
+.sect3 .product .clothes .green button:hover {
+  cursor: pointer;
+}
+
+.sect4 {
+  width: 100%;
+  padding: 20px 0;
+}
+.sect4 .get {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 30px;
+  background-color: rgb(223, 241, 255);
+}
+.sect4 .get .offer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sect4 .get .offer h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 42px;
+}
+.sect4 .get .offer p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(31, 52, 68);
+}
+.sect4 .get .email {
+  width: 40%;
+  display: flex;
+  position: relative;
+}
+.sect4 .get .email input {
+  width: 55%;
+  height: 60px;
+  outline: none;
+  border: 2px solid white;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.sect4 .get .email .now {
+  position: absolute;
+  right: 80px;
+  width: 45%;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(37, 119, 253);
+  border: 1px solid rgb(37, 119, 253);
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sect4 .get .email .now:hover {
+  background-color: rgb(0, 177, 255);
+  border: 1px solid rgb(0, 177, 255);
+  cursor: pointer;
+}
+
+.sect5 {
+  width: 100%;
+  padding: 100px 0;
+}
+.sect5 .free {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sect5 .free .secure {
+  width: 32%;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sect5 .free .secure i {
+  font-size: 40px;
+}
+.sect5 .free .secure h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+}
+.sect5 .free .secure p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: dimgrey;
+  line-height: 1.7;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0 0 0;
+}
+footer .foot {
+  display: flex;
+  justify-content: space-between;
+}
+footer .foot .quick {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer .foot .quick img {
+  width: 40%;
+}
+footer .foot .quick p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: dimgrey;
+  line-height: 1.7;
+}
+footer .foot .quick h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+}
+footer .foot .quick ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 20px;
+}
+footer .foot .quick ul li {
+  list-style-type: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: dimgrey;
+}
+footer .copy {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .copy p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: dimgrey;
+}
+footer .copy p i {
+  color: rgb(37, 119, 253);
+}
+footer .copy p a {
+  text-decoration: none;
+  color: rgb(37, 119, 253);
+}
+footer .copy .f {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .copy .f i {
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+footer .copy .f i:hover {
+  color: rgb(37, 119, 253);
+  cursor: pointer;
+}
+
+.add {
+  width: 100%;
+  background-color: rgb(255, 246, 217);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  flex-direction: column;
+  gap: 60px;
+}
+.add form {
+  width: 420px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: teal;
+  border-radius: 10px;
+}
+.add form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  color: white;
+}
+.add form img {
+  width: 50%;
+  margin-left: 60px;
+}
+.add form p {
+  display: none;
+  color: maroon;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+.add form input[type=file]::file-selector-button {
+  width: 120px;
+  height: 40px;
+  background-color: maroon;
+  border: 1px solid maroon;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.add form input[type=text] {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+  outline: none;
+}
+.add form input[type=number] {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+  outline: none;
+}
+.add form input[type=submit] {
+  width: 150px;
+  height: 45px;
+  background-color: maroon;
+  border: 1px solid maroon;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: white;
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.add table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 2px solid teal;
+}
+.add table thead tr, .add table tbody tr {
+  border-bottom: 2px solid teal;
+}
+.add table thead tr th, .add table thead tr td, .add table tbody tr th, .add table tbody tr td {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-right: 2px solid teal;
+  color: maroon;
+  text-align: center;
+}
+.add table thead tr th button, .add table thead tr td button, .add table tbody tr th button, .add table tbody tr td button {
+  width: 100px;
+  height: 40px;
+  background-color: maroon;
+  border: 1px solid maroon;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+.details {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+.details .clothes {
+  width: 32%;
+  margin-top: 40px;
+}
+.details .clothes .picture {
+  width: 100%;
+}
+.details .clothes .picture img {
+  width: 100%;
+}
+.details .clothes .green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.details .clothes .green .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.details .clothes .green .icons i {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+}
+.details .clothes .green .icons #yellow {
+  color: rgb(255, 206, 37);
+}
+.details .clothes .green p {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.details .clothes .green p:hover {
+  color: rgb(255, 0, 60);
+  cursor: pointer;
+}
+.details .clothes .green .dollar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.details .clothes .green .dollar #span1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.details .clothes .green .dollar #span2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 0, 60);
+}
+
+.favorite {
+  width: 100%;
+  padding: 30px 0;
+}
+.favorite h1 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  color: rgb(31, 52, 68);
+}
+.favorite #favorite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.favorite #favorite .clothes {
+  width: 32%;
+  margin-top: 40px;
+}
+.favorite #favorite .clothes .picture {
+  width: 100%;
+}
+.favorite #favorite .clothes .picture img {
+  width: 100%;
+}
+.favorite #favorite .clothes .green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.favorite #favorite .clothes .green .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.favorite #favorite .clothes .green .icons i {
+  font-size: 16px;
+  color: rgb(204, 204, 204);
+}
+.favorite #favorite .clothes .green .icons #yellow {
+  color: rgb(255, 206, 37);
+}
+.favorite #favorite .clothes .green p {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.favorite #favorite .clothes .green p:hover {
+  color: rgb(255, 0, 60);
+  cursor: pointer;
+}
+.favorite #favorite .clothes .green .dollar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.favorite #favorite .clothes .green .dollar #span1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.favorite #favorite .clothes .green .dollar #span2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 0, 60);
+}
+.favorite #favorite .clothes .green button {
+  width: 150px;
+  height: 45px;
+  background-color: teal;
+  border: 1px solid teal;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  border-radius: 30px;
+  transition: all 0.5s ease;
+}
+.favorite #favorite .clothes .green button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    max-width: 800px;
+  }
+  header {
+    display: none;
+  }
+  nav .navbar ul {
+    display: none;
+  }
+  nav .navbar .div {
+    display: none;
+  }
+  nav .navbar #list {
+    display: block;
+  }
+  .sect1 .winter .text h1 {
+    font-size: 50px;
+  }
+  .sect2 .water {
+    flex-wrap: wrap;
+  }
+  .sect2 .water .cloth {
+    width: 47%;
+  }
+  .sect3 .product .clothes {
+    width: 47%;
+  }
+  .sect4 .get {
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .sect4 .get .offer {
+    width: 100%;
+  }
+  .sect4 .get .email {
+    width: 100%;
+  }
+  .sect5 .free {
+    flex-wrap: wrap;
+  }
+  .sect5 .free .secure {
+    width: 47%;
+    margin-top: 30px;
+  }
+  footer .foot {
+    flex-wrap: wrap;
+  }
+  footer .foot .quick {
+    width: 32%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .sect1 .winter {
+    padding-left: 100px;
+  }
+  .sect1 .winter .image {
+    display: none;
+  }
+  .sect1 .winter .text {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .sect1 .winter .text h1 {
+    font-size: 40px;
+  }
+  .sect2 .shop h2 {
+    font-size: 35px;
+  }
+  .sect2 .water {
+    flex-direction: column;
+  }
+  .sect2 .water .cloth {
+    width: 100%;
+  }
+  .sect2 .water .cloth .new .right {
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sect2 .water .cloth .new .right h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 35px;
+  }
+  .sect2 .water .cloth .new .right .best {
+    width: 170px;
+    height: 45px;
+    background-color: rgb(255, 206, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  .sect2 .water .cloth .new .right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: rgb(37, 119, 253);
+  }
+  .sect2 .water .cloth .new .right span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+  .sect3 .late {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sect3 .late h2 {
+    font-size: 35px;
+  }
+  .sect3 .product {
+    flex-direction: column;
+  }
+  .sect3 .product .clothes {
+    width: 100%;
+  }
+  .sect4 .get .offer h2 {
+    font-size: 30px;
+  }
+  .sect5 .free {
+    flex-direction: column;
+  }
+  .sect5 .free .secure {
+    width: 100%;
+    margin-top: 50px;
+  }
+  footer .foot .quick {
+    width: 47%;
+  }
+  footer .copy {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 1200px;
+  }
+  .sect1 .winter {
+    padding-left: 0;
+  }
+  .sect1 .winter .text {
+    padding-bottom: 20px;
+  }
+  .sect1 .winter .text h1 {
+    font-size: 40px;
+  }
+  .sect2 .shop h2 {
+    font-size: 35px;
+  }
+  .sect2 .water {
+    flex-direction: column;
+  }
+  .sect2 .water .cloth {
+    width: 100%;
+  }
+  .sect2 .water .cloth .new .right {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .sect2 .water .cloth .new .right h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+  }
+  .sect2 .water .cloth .new .right .best {
+    width: 170px;
+    height: 45px;
+    background-color: rgb(255, 206, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  .sect2 .water .cloth .new .right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    color: rgb(37, 119, 253);
+  }
+  .sect2 .water .cloth .new .right span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+  }
+  .sect3 .input {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sect3 .input #search {
+    width: 250px;
+  }
+  footer .foot {
+    flex-direction: column;
+  }
+  footer .foot .quick {
+    width: 100%;
+  }
+  footer .foot .quick h3 {
+    padding-left: 0;
+  }
+  footer .foot .quick ul {
+    padding-left: 0;
+  }
+  footer .foot .quick img {
+    width: 25%;
+  }
+}

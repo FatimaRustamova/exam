@@ -1,0 +1,47 @@
+{
+  "Estore": [
+    {
+      "id": 1,
+      "image": "./assets/images/product1.png",
+      "name": "Green Dress with details",
+      "price": 40
+    },
+    {
+      "id": 2,
+      "image": "./assets/images/product2.png",
+      "name": "Dog Green with details",
+      "price": 28
+    },
+    {
+      "id": 3,
+      "image": "./assets/images/product3.png",
+      "name": "Boy Dress with details",
+      "price": 59
+    },
+    {
+      "id": 4,
+      "image": "./assets/images/product4.png",
+      "name": "Align Dress with details",
+      "price": 12
+    },
+    {
+      "id": 5,
+      "image": "./assets/images/product5.png",
+      "name": "Service Dress with details",
+      "price": 78
+    },
+    {
+      "id": 6,
+      "image": "./assets/images/product6.png",
+      "name": "Host Dress with details",
+      "price": 36
+    },
+    {
+      "id": "e053",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAQCAIAAABocZPBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo5ZThjMTE2MS05YjA5LTQ0ODMtOTRjMy0xMzViNzE4OTNlODUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QkQ2NDg4NkM0RDU5MTFFQTg2RUI4QjM1RjM3MzJGRjQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QkQ2NDg4NkI0RDU5MTFFQTg2RUI4QjM1RjM3MzJGRjQiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0MzU3MTAzOC00NWFkLTQ5ZjUtYTVjOC0wNmY0YjNiYTQzMmEiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDpkYjVkYTllZS1jNDljLTU5NDAtYjRlMi0xZDA5NzEyZTVhZjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5wJPIvAAAB90lEQVR42qxSz2sTQRR+b3Z282N305KIVQyBaA4WWgrVm2dBqQcxXkTPevDUggf9BwT9HwoevAle6k0PXgqetIKUhFLTqtRtoPlBsrPZzc5zdlPFWH+skO/w5s2b+b73MW+wevWBJ6Q3CCwr3e26+bzdbLZPnCx8/tQslY43dpxji7OLq0+X/PcO2JAAeOni/UrllBCD4VAaBvf9QDf0wA9SaUO4A8vOvH23vXzncvXKeQmYRJGTDJWc5wVEFIZhFIcR1+17JKnf8/TCVPvVm4PaRg+MRIrIkDFEBIwxqqoKkVqiIreyol4XW60OZA5J6gjjCHDo+0dOwGUEiqH4oBYVwzC+FuXS/filuHKrdO1CESCZR8SRXKRPIyFARiTjFME8W966+7B2o+aAlewdIxbG7iA2KdUWaNQIkMCt75YfLZ9ZOlemZJPZ3XGINE8MlABjTD0BIoNYPAylbvBGR2w/WWu+ftmFdCLFlce3fR/U18lkU/2eyOXMdrtXKNj7+52Zmem9vdbNudPFZy9YYzPh78HuxgfbsoAhSFIzjobCNRiGoGsQxNHzYSrnaSqTR+nfx/yTx/WFahbY39vSH8i/LWLrq2NbNkwOfPP6PVPTj7TCMX+/OsLxozGn3JyvmEZqgh4xOOjARMGf52cz/5rMf+GbAAMAci7tF3PwRiIAAAAASUVORK5CYII=",
+      "name": "asas",
+      "price": "11"
+    }
+  ],
+  "Favorite": []
+}

@@ -1,0 +1,1139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 32px;
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 32px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    background-color: $color2;
+    padding: 20px 0;
+    .head{
+        @include flex;
+        .left{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            p{
+                font-family: $font-family1;
+                color: $color1;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+        .account{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            a{
+                text-decoration: none;
+                font-family: $font-family1;
+                color: $color1;
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+nav{
+    width: 100%;
+    padding: 30px 0;
+    background-color: $color1;
+    z-index: 1000;
+    transition: all .5s ease;
+    position: relative;
+    .navbar{
+        @include flex;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            li{
+                list-style-type: none;
+                font-family: $font-family1;
+                font-size: 15px;
+                a{
+                    text-decoration: none;
+                    transition: all .5s ease;
+                    color: $color2;
+                    &:hover{
+                        color: $color4;
+                    }
+                }
+            }
+            .hot{
+                position: absolute;
+                width: 45px;
+                height: 20px;
+                border-radius: 20px;
+                background-color: $color4;
+                color: $color1;
+                font-family: $font-family1;
+                font-size: 14px;
+                top: -20px;
+                left: 200px;
+                @include center;
+            }
+        }
+        .div{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            input{
+                width: 150px;
+                height: 30px;
+                border-radius: 20px;
+                font-family: $font-family1;
+                font-size: 14px;
+                padding-left: 10px;
+                border: 1px solid $color5;
+                position: relative;
+                outline: none;
+            }
+            .i{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border:1px solid $color5;
+                @include center;
+                position: relative;
+                i{
+                    font-size: 18px;
+                }
+                .position{
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    width: 30px;
+                    height: 30px;
+                    background-color: $color6;
+                    @include center;
+                    border-radius: 50%;
+                    p{
+                        font-family: $font-family1;
+                        font-size: 13px;
+                        color: $color1;
+                    }
+                }
+            }
+            button{
+                width: 100px;
+                height: 45px;
+                background-color: $color3;
+                border: 1px solid $color3;
+                color: $color1;
+                font-family: $font-family1;
+                font-size: 17px;
+                border-radius: 30px;
+                transition: all .5s ease;
+                &:hover{
+                    background-color: $color6;
+                    border: 1px solid $color6;
+                    cursor: pointer;
+                }
+            }
+        }
+        #list{
+            display: none;
+            font-size: 40px;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal{
+    width: 100%;
+    position: absolute;
+    background-color: $color7;
+      ul{
+        padding: 20px 0;
+        display: flex;
+        gap: 30px;
+        position: relative;
+        flex-direction: column;  
+        li{
+            list-style-type: none;
+            font-family: $font-family1;
+            font-size: 15px;
+            a{
+                text-decoration: none;
+                transition: all .5s ease;
+                color: $color1;
+                &:hover{
+                    color: $color4;
+                }
+            }
+        }
+    }
+}
+
+.none{
+    display: none;
+}
+
+.sect1{
+    width: 100%;
+    padding-top: 50px;
+    background-image: url("../images/h1_hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .winter{
+        @include flex;
+        .image{
+            width: 55%;
+            img{
+                width: 100%;
+            }
+        }
+        .text{
+            width: 42%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            p{
+                font-family: $font-family1;
+                font-size: 25px;
+                font-style: italic;
+                color: $color3;
+            }
+            h1{
+                font-family: $font-family2;
+                font-size: 80px; 
+            }
+            span{
+                font-family: $font-family2;
+                font-size: 20px;
+                font-style: italic;
+                color: $color7;
+            }
+            button{
+                width: 170px;
+                height: 50px;
+                background-color: $color3;
+                border: 1px solid $color3;
+                color: $color1;
+                font-family: $font-family1;
+                font-size: 17px;
+                border-radius: 30px;
+                transition: all .5s ease;
+                margin-top: 20px;
+                &:hover{
+                    background-color: $color6;
+                    border: 1px solid $color6;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.sect2{
+    width: 100%;
+    padding: 100px 0;
+    .shop{
+        @include center;
+        h2{
+            font-family: $font-family2;
+            font-size: 45px;  
+            text-align: center;
+        }
+    }
+    .water{
+        @include flex;
+        .cloth{
+            width: 32%;
+            margin-top: 50px;
+            .new{
+                width: 100%;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .right{
+                    position: absolute;
+                    right: 10px;
+                    top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    h3{
+                        font-family: $font-family2;
+                        font-size: 25px;
+                    }
+                    .best{
+                        width: 140px;
+                        height: 40px;
+                        background-color: $color8;
+                        @include center;
+                        font-family: $font-family1;
+                        font-size: 15px;
+                        border-radius: 20px;
+                    }
+                    p{
+                        font-family: $font-family1;
+                        font-size: 17px;
+                        font-style: italic;
+                        color: $color3;
+                    }
+                    span{
+                        font-family: $font-family1;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active{
+    color: $color4;
+}
+
+.sect3{
+    width: 100%;
+    padding: 100px 0;
+    .late{
+        @include flex;
+        h2{
+            font-family: $font-family1;
+            font-size: 45px;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            li{
+                list-style-type: none;
+                font-family: $font-family1;
+                font-size: 17px;
+                a{
+                    text-decoration: none;
+                    transition: all .5s ease;
+                    color: $color7;
+                    &:hover{
+                        color: $color4;
+                    }
+                }
+            }
+        }
+    }
+    hr{
+        margin-top: 30px;
+        width: 100%;
+        height: 1px;
+        border: 1px solid $color9;
+    }
+    .input{
+        padding: 50px 0 20px 0;
+        @include center;
+        gap: 30px;
+        #search{
+            width: 350px;
+            height: 45px;
+            outline: none;
+            border: 2px solid $color10;
+            background-color: $color1;
+            font-family: $font-family1;
+            font-size: 16px;
+            padding-left: 15px;
+        }
+        #sort{
+            width: 150px;
+            height: 45px;
+            outline: none;
+            font-family: $font-family1;
+            font-size: 16px;
+            background-color: $color10;
+            border: 1px solid $color10;
+            color: $color1;
+            padding-left: 15px;
+        }
+    }
+    .product{
+        @include flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        .clothes{
+            width: 32%;
+            margin-top: 40px;
+            position: relative;
+            .heart{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                i{
+                    font-size: 25px;
+                    color: $color12;
+                    cursor: pointer;
+                }
+            }
+            .picture{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .green{
+                @include center;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    i{
+                        font-size: 16px;
+                        color: $color5;
+                    }
+                    #yellow{
+                        color: $color8;
+                    }
+                }
+                p{
+                    font-family: $font-family2;
+                    font-size: 17px;
+                    text-align: center;
+                    transition: all .5s ease;
+                    &:hover{
+                        color: $color4;
+                        cursor: pointer;
+                    }
+                }
+                .dollar{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    #span1{
+                        font-family: $font-family1;
+                        font-size: 20px;
+                    }
+                    #span2{
+                        font-family: $font-family1;
+                        font-size: 20px;
+                        color: $color4;
+                    }
+                }
+                button{
+                    width: 150px;
+                    height: 45px;
+                    background-color: $color10;
+                    border: 1px solid $color10;
+                    color: $color1;
+                    font-family: $font-family1;
+                    font-size: 17px;
+                    border-radius: 30px;
+                    transition: all .5s ease;
+                    margin-top: 20px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sect4{
+    width: 100%;
+    padding: 20px 0;
+    .get{
+        @include center;
+        padding: 100px 0;
+        gap: 30px;
+        background-color: $color13;
+        .offer{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-family: $font-family1;
+                font-size: 42px;
+            }
+            p{
+                font-family: $font-family1;
+                font-size: 20px;
+                color: $color14;
+            }
+        }
+        .email{
+            width: 40%;
+            display: flex;
+            position: relative;
+            input{
+                width: 55%;
+                height: 60px;
+                outline: none;
+                border: 2px solid $color1;
+                background-color: $color1;
+                font-family: $font-family1;
+                font-size: 16px;
+                padding-left: 20px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+            .now{
+                position: absolute;
+                right: 80px;
+                width: 45%;
+                width: 150px;
+                height: 60px;
+                background-color: $color3;
+                border: 1px solid $color3;
+                color: $color1;
+                font-family: $font-family1;
+                font-size: 16px;
+                border-radius: 30px;
+                transition: all .5s ease;
+                @include center;
+                &:hover{
+                    background-color: $color6;
+                    border: 1px solid $color6;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.sect5{
+    width: 100%;
+    padding: 100px 0;
+    .free{
+        @include flex;
+        .secure{
+            width: 32%;
+            padding-right: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            i{
+                font-size: 40px;
+            }
+            h3{
+                font-family: $font-family1;
+                font-size: 22px;
+            }
+            p{
+                font-family: $font-family3;
+                font-size: 17px;
+                color: $color7;
+                line-height: 1.7;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0 0 0;
+    .foot{
+        display: flex;
+        justify-content: space-between;
+        .quick{
+            width: 24%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            img{
+                width: 40%;
+            }
+            p{
+                font-family: $font-family3;
+                font-size: 18px;
+                color: $color7;
+                line-height: 1.7;
+            }
+            h3{
+                font-family: $font-family1;
+                font-size: 20px;
+                padding-left: 20px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding-left: 20px;
+                li{
+                    list-style-type: none;
+                    font-family: $font-family3;
+                    font-size: 17px;
+                    color: $color7;
+                }
+            }
+        }
+    }
+    .copy{
+        padding: 80px 0;
+        @include flex;
+        p{
+            font-family: $font-family1;
+            font-size: 16px;
+            color: $color7;
+            i{
+                color: $color3;
+            }
+            a{
+                text-decoration: none;
+                color: $color3;
+            }
+        }
+        .f{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            i{
+                font-size: 15px;
+                transition: all .5s ease;
+                &:hover{
+                    color: $color3;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.add{
+    width: 100%;
+    background-color: $color11;
+    @include center;
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 60px;
+    form{
+        width: 420px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: $color10;
+        border-radius: 10px;
+        label{
+            font-family: $font-family1;
+            font-size: 18px;
+            margin-top: 20px;
+            color: $color1;
+        }
+        img{
+            width: 50%;
+            margin-left: 60px;
+        }
+        p{
+            display: none;
+            color: $color12;
+            font-family: $font-family1;
+            font-size: 18px;
+        }
+        input[type=file]::file-selector-button{
+            width: 120px;
+            height: 40px;
+            background-color: $color12;
+            border: 1px solid $color12;
+            font-family: $font-family1;
+            font-size: 16px;
+            color: $color1;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        input[type=text]{
+            width: 100%;
+            height: 40px;
+            background-color: $color1;
+            border: 1px solid $color1;
+            font-family: $font-family1;
+            font-size: 16px;
+            padding-left: 15px;
+            outline: none;
+        }
+        input[type=number]{
+            width: 100%;
+            height: 40px;
+            background-color: $color1;
+            border: 1px solid $color1;
+            font-family: $font-family1;
+            font-size: 16px;
+            padding-left: 15px;
+            outline: none;
+        }
+        input[type=submit]{
+            width: 150px;
+            height: 45px;
+            background-color: $color12;
+            border: 1px solid $color12;
+            font-family: $font-family1;
+            font-size: 16px;
+            color: $color1;
+            margin-left: 100px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+    }
+    table{
+        width: 90%;
+        border-collapse: collapse;
+        border: 2px solid $color10;
+        thead, tbody{
+            tr{
+                border-bottom: 2px solid $color10;
+                th,td{
+                    padding: 10px;
+                    font-family: $font-family1;
+                    font-size: 17px;
+                    border-right: 2px solid $color10;
+                    color: $color12;
+                    text-align: center;
+                    button{
+                        width: 100px;
+                        height: 40px;
+                        background-color: $color12;
+                        border: 1px solid $color12;
+                        font-family: $font-family1;
+                        font-size: 15px;
+                        color: $color1;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.details{
+    width: 100%;
+    @include center;
+    padding: 100px 0;
+    .clothes{
+        width: 32%;
+        margin-top: 40px;
+        .picture{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .green{
+            @include center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 0;
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i{
+                    font-size: 16px;
+                    color: $color5;
+                }
+                #yellow{
+                    color: $color8;
+                }
+            }
+            p{
+                font-family: $font-family2;
+                font-size: 17px;
+                text-align: center;
+                transition: all .5s ease;
+                &:hover{
+                    color: $color4;
+                    cursor: pointer;
+                }
+            }
+            .dollar{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                #span1{
+                    font-family: $font-family1;
+                    font-size: 20px;
+                }
+                #span2{
+                    font-family: $font-family1;
+                    font-size: 20px;
+                    color: $color4;
+                }
+            }
+        }
+    }
+}
+
+.favorite{
+    width: 100%;
+    padding: 30px 0;
+    h1{
+        text-align: center;
+        font-family: $font-family1;
+        font-size: 45px;
+        color: $color14
+    }
+    #favorite{
+        @include flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        .clothes{
+            width: 32%;
+            margin-top: 40px;
+            .picture{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            .green{
+                @include center;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    i{
+                        font-size: 16px;
+                        color: $color5;
+                    }
+                    #yellow{
+                        color: $color8;
+                    }
+                }
+                p{
+                    font-family: $font-family2;
+                    font-size: 17px;
+                    text-align: center;
+                    transition: all .5s ease;
+                    &:hover{
+                        color: $color4;
+                        cursor: pointer;
+                    }
+                }
+                .dollar{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    #span1{
+                        font-family: $font-family1;
+                        font-size: 20px;
+                    }
+                    #span2{
+                        font-family: $font-family1;
+                        font-size: 20px;
+                        color: $color4;
+                    }
+                }
+                button{
+                    width: 150px;
+                    height: 45px;
+                    background-color: $color10;
+                    border: 1px solid $color10;
+                    color: $color1;
+                    font-family: $font-family1;
+                    font-size: 17px;
+                    border-radius: 30px;
+                    transition: all .5s ease;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .container{
+        max-width: 800px;
+    }
+    header{
+        display: none;
+    }
+    nav{
+        .navbar{
+            ul{
+                display: none;
+            }
+            .div{
+                display: none;
+            }
+            #list{
+                display: block;
+            }
+        }
+    }
+    .sect1{
+        .winter{
+            .text{
+                h1{
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+    .sect2{
+        .water{
+            flex-wrap: wrap;
+            .cloth{
+                width: 47%;
+            }
+        }
+    }
+    .sect3{
+        .product{
+            .clothes{
+                width: 47%;
+            }
+        }
+    }
+    .sect4{
+        .get{
+            flex-direction: column;
+            padding-left: 50px;
+            .offer{
+                width: 100%;
+            }
+            .email{
+                width: 100%;
+            }
+        }
+    }
+    .sect5{
+        .free{
+            flex-wrap: wrap;
+            .secure{
+                width: 47%;
+                margin-top: 30px;
+            }
+        }
+    }
+    footer{
+        .foot{
+            flex-wrap: wrap;
+            .quick{
+                width: 32%;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        max-width: 600px;
+    }
+    .sect1{
+        .winter{
+            padding-left: 100px;
+            .image{
+                display: none;
+            }
+            .text{
+                width: 100%;
+                padding-bottom: 20px;
+                h1{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .sect2{
+        .shop{
+            h2{
+                font-size: 35px;
+            }
+        }
+        .water{
+            flex-direction: column;
+            .cloth{
+                width: 100%;
+                .new{
+                    .right{
+                        position: absolute;
+                        right: 50px;
+                        top: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h3{
+                            font-family: $font-family2;
+                            font-size: 35px;
+                        }
+                        .best{
+                            width: 170px;
+                            height: 45px;
+                            background-color: $color8;
+                            @include center;
+                            font-family: $font-family1;
+                            font-size: 16px;
+                            border-radius: 20px;
+                        }
+                        p{
+                            font-family: $font-family1;
+                            font-size: 20px;
+                            font-style: italic;
+                            color: $color3;
+                        }
+                        span{
+                            font-family: $font-family1;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sect3{
+        .late{
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                font-size: 35px;
+            }
+        }
+        .product{
+            flex-direction: column;
+            .clothes{
+                width: 100%;
+            }
+        }
+    }
+    .sect4{
+        .get{
+            .offer{
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .sect5{
+        .free{
+            flex-direction: column;
+            .secure{
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+    footer{
+        .foot{
+            .quick{
+                width: 47%;
+            }
+        }
+        .copy{
+            flex-direction: column;
+            gap: 30px;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container{
+        max-width: 1200px;
+    }
+    .sect1{
+        .winter{
+            padding-left: 0;
+            .text{
+                padding-bottom: 20px;
+                h1{
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+    .sect2{
+        .shop{
+            h2{
+                font-size: 35px;
+            }
+        }
+        .water{
+            flex-direction: column;
+            .cloth{
+                width: 100%;
+                .new{
+                    .right{
+                        position: absolute;
+                        right: 30px;
+                        top: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h3{
+                            font-family: $font-family2;
+                            font-size: 25px;
+                        }
+                        .best{
+                            width: 170px;
+                            height: 45px;
+                            background-color: $color8;
+                            @include center;
+                            font-family: $font-family1;
+                            font-size: 16px;
+                            border-radius: 20px;
+                        }
+                        p{
+                            font-family: $font-family1;
+                            font-size: 17px;
+                            font-style: italic;
+                            color: $color3;
+                        }
+                        span{
+                            font-family: $font-family1;
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sect3{
+        .input{
+            flex-direction: column;
+            gap: 20px;
+            #search{
+                width: 250px;
+            }
+        }
+    }
+    footer{
+        .foot{
+            flex-direction: column;
+            .quick{
+                width: 100%;
+                h3{
+                    padding-left: 0;
+                }
+                ul{
+                    padding-left: 0;
+                }
+                img{
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
